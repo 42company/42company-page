@@ -3,229 +3,70 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
 @import "bourbon";
 
-// .sect-banner{
-//   display: table;
-//   width: 100%;
-//   margin: 0 auto;
-//   height: 100vh;
-// }
-/*
-.kf-slider{
-  figure {
-    @include animation(fade-out 30s linear infinite 0s);
-    backface-visibility: hidden;
-    height: 100%;
-    width: 100%;
-    color: transparent;
-    top: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: absolute;
-    opacity: 0;
-    z-index: 0;
-    .bg-wrapper {
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.1);
-      z-index: 1;
-    }
-  }
-
-  figure:nth-child(1) {
-    @include animation-delay(0);
-    @include background-image(url(../images/img_1.jpg));
-  }
-
-  figure:nth-child(2){
-    @include animation-delay(6s);
-    @include background-image(url(../images/img_2.jpg));
-  }
-
-  figure:nth-child(3){
-    @include animation-delay(12s);
-    @include background-image(url(../images/img_3.jpg));
-  }
-
-  figure:nth-child(4){
-    @include animation-delay(18s);
-    @include background-image(url(../images/img_4.jpg));
-  }
-
-  figure:nth-child(5){
-    @include animation-delay(24s);
-    @include background-image(url(../images/img_5.jpg));
-  }
-
-  @include keyframes(fade-out) {
-    0% {
-      opacity:0;
-      animation-timing-function: ease-in;
-    }
-    8% {
-      opacity:1;
-      animation-timing-function: ease-out;
-    }
-    17% {
-      opacity:1;
-    }
-    25% {
-      opacity:0;
-    }
-    100% {
-      opacity:0;
-    }
-  }
+.bg {
+  position: absolute;
+  @include background-image(url(../images/img_0.jpg));
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-*/
 
-// .bg {
-//   position: absolute;
-//   @include background-image(url(../images/img_0.jpg));
-//   height: 100%;
-//   width: 100%;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-// }
 
-body {
-  background-color: #d8e8f0;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
+.contents {
+  display: table-cell;
+  position: absolute;
+  top: 25%;
+  z-index: 4;
+  padding-left: 150px;
+  font-weight: 300;
+  font-size: 12px;
 
-  #snow{
-  	background: none;
-  	background-image: url(../images/s1.png), url(../images/s2.png), url(../images/s3.png);
-  	height: 100%;
-  	left: 0;
-  	position: absolute;
-  	top: 0;
-  	width: 100%;
-  	z-index:1;
-  	-webkit-animation: snow 10s linear infinite;
-  	-moz-animation: snow 10s linear infinite;
-  	-ms-animation: snow 10s linear infinite;
-  	animation: snow 10s linear infinite;
-  }
-  @keyframes snow {
-    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
-  }
-  @-moz-keyframes snow {
-    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-    100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
-  }
-  @-webkit-keyframes snow {
-    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
-  }
-  @-ms-keyframes snow {
-    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
-  }
-
-  .merry-chtistmas {
-    font-size: 27px;
-    color: #111111;
-    font-weight: bold;
-    margin-top: 40px;
-  }
-
-  .xmas-42 {
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 30px;
-    width: 450px;
-    height: 300px;
-    @include background-image(url(../images/42xmas_2016.png));
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+  .loggo {
+    letter-spacing: 8px;
+    background: white;
+    display: inline-block;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    cursor: default;
   }
 
   .description {
-    margin-top: 5px;
-    color: #111111;
-    font-size: 12px;
-    font-weight: lighter;
+    position: relative;
+    letter-spacing: 4px;
+    margin-top: 35px;
+    color: white;
+    padding-left: 20px;
   }
 
-  .button {
-    margin: 7px;
-    min-width: 90px;
-    letter-spacing: 2px;
+  #border-left {
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 4%;
+    bottom: 4%;
+    margin-right: 25px;
+    left: 0px;
+  }
+
+  .link {
+    font-weight: 500;
+    color: white;
+  }
+
+  .contact-us {
+    letter-spacing: 4px;
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 50px;
     padding: 15px;
     background-color: rgba(255,255,255,0.2);
     text-decoration: none;
     @include transition( 1s );
-    color: #111111;
+    color: white;
     font-weight: 300;
     &:hover {
       background-color: rgba(255,255,255,0.4);
     }
   }
 }
-//
-// .contents {
-//   display: table-cell;
-//   position: absolute;
-//   top: 25%;
-//   z-index: 4;
-//   padding-left: 150px;
-//   font-weight: 300;
-//   font-size: 12px;
-//
-//   .loggo {
-//     letter-spacing: 8px;
-//     background: white;
-//     display: inline-block;
-//     padding: 20px;
-//     font-size: 22px;
-//     font-weight: 600;
-//     color: black;
-//     cursor: default;
-//   }
-//
-//   .description {
-//     position: relative;
-//     letter-spacing: 4px;
-//     margin-top: 35px;
-//     color: white;
-//     padding-left: 20px;
-//   }
-//
-//   #border-left {
-//     border-left: 2px solid rgba(255, 255, 255, 0.5);
-//     position: absolute;
-//     top: 4%;
-//     bottom: 4%;
-//     margin-right: 25px;
-//     left: 0px;
-//   }
-//
-//   .link {
-//     font-weight: 500;
-//     color: white;
-//   }
-//
-//   .contact-us {
-//     letter-spacing: 4px;
-//     display: inline-block;
-//     margin-top: 50px;
-//     padding: 15px;
-//     background-color: rgba(255,255,255,0.2);
-//     text-decoration: none;
-//     @include transition( 1s );
-//     color: white;
-//     font-weight: 300;
-//     &:hover {
-//       background-color: rgba(255,255,255,0.4);
-//     }
-//   }
-// }
