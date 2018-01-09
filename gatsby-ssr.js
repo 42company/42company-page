@@ -1,7 +1,10 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
+import React from 'react'
+import { TypographyStyle, GoogleFont } from 'react-typography'
+import typography from './src/utils/typography'
 
- // You can delete this file if you're not using it
+exports.onRenderBody = ({ setHeadComponents }, pluginOptions) => {
+  setHeadComponents([
+    <TypographyStyle key={`TypographyStyle`} typography={typography} />,
+    <GoogleFont key={`GoogleFont`} typography={typography} />,
+  ])
+}
