@@ -6,18 +6,18 @@ import MissionImg from '../images/img_ourmission.jpg'
 import SlideImg from '../images/img_slide.png'
 import NetworkImg from '../images/img_42network.png'
 import GatewayImg from '../images/img_42gateway.png'
-import SungwonImg from '../images/img_sungwon_over.png'
-import AmritaImg from '../images/img_amrita_over.png'
-import NakulImg from '../images/img_nakul_over.png'
-import JunaidImg from '../images/img_junaid_over.png'
-import SeungImg from '../images/img_seung_over.png'
-import HyunahImg from '../images/img_hyunah_over.png'
-import JaeheeImg from '../images/img_jaehee_over.png'
-import KyudeokImg from '../images/img_kyudeok_over.png'
-import SeohyunImg from '../images/img_seohyun_over.png'
-import HoseongImg from '../images/img_hoseong_over.png'
-import GaeunImg from '../images/img_gaeun_over.png'
-import YoosungImg from '../images/img_yoosung_over.png'
+import SungwonImg from '../images/img_sungwon_over.jpg'
+import AmritaImg from '../images/img_amrita_over.jpg'
+import NakulImg from '../images/img_nakul_over.jpg'
+import JunaidImg from '../images/img_junaid_over.jpg'
+import SeungImg from '../images/img_seung_over.jpg'
+import HyunahImg from '../images/img_hyunah_over.jpg'
+import JaeheeImg from '../images/img_jaehee_over.jpg'
+import KyudeokImg from '../images/img_kyudeok_over.jpg'
+import SeohyunImg from '../images/img_seohyun_over.jpg'
+import HoseongImg from '../images/img_hoseong_over.jpg'
+import GaeunImg from '../images/img_gaeun_over.jpg'
+import YoosungImg from '../images/img_yoosung_over.jpg'
 
 const SectionWrapper = styled.div `
   max-width: 1024px;
@@ -47,6 +47,7 @@ const SloganSection = styled.section `
   background-color: #f2f2f2;
   color: #111111;
   padding: 70px 20px;
+  text-align: center;
 
   @media (max-width: 550px) {
     padding: 50px 15px;
@@ -60,6 +61,7 @@ const SloganSection = styled.section `
 
 const SlogalContent = styled.h4 `
   max-width: 820px;
+  margin: auto;
 `
 
 const MissionSection = styled.section `
@@ -173,6 +175,10 @@ const LinkButton = styled.a `
 const TeamSection = styled.section `
   padding: 50px 25px;
   text-align: center;
+
+  h1 {
+    margin-bottom: 55px;
+  }
 `
 
 const MemberContainer = styled.div `
@@ -203,7 +209,7 @@ const Member = styled.div `
 
 const MemberImage = styled.img `
   width: 80px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   filter: grayscale(100%);
 
   &:hover {
@@ -222,7 +228,7 @@ const IndexPage = () => (
     <CompanyImgSection src={CompanyImg} />
     <SloganSection>
       <SectionWrapper>
-        <h1>Experts on Middle-Eastern Tech Marker</h1>
+        <h1>Experts on Middle-Eastern Tech Market</h1>
         <SlogalContent>We are an independent, owner-managed company. We have a dedicated team of professionals looking at analyzing your advertising needs and providing best solutions.</SlogalContent>
       </SectionWrapper>
     </SloganSection>
